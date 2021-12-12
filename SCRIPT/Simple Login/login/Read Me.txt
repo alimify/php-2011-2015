@@ -1,0 +1,58 @@
+These files for a login were created in under 20 minutes in class by
+Darcy Clarke ... ME!
+
+Thanks for reading and I hope this helps you!
+
+::::::::::::::File Layouts:::::::::::::: (read this if you dont understand the files)
+
+------------------------------------
+
+authenticate.php:
+
+To add "authentication" to your pages simply add:
+<? include_once("authenticate.php"); ?>
+
+At the top of your page. If a user is not logged in (using cookies.. not sessions)
+then it will re-direct he/she to the index.php file.
+
+
+-------------------------------------
+
+process.php:
+
+The process.php process the login information. You can modify this page to make a user
+re-direct to a different page then "backend.php" once the have checked properly through the
+login.
+
+-------------------------------------
+
+database.php:
+
+Is your basic database connection which gets include in the authenticate page
+and your process page.
+
+-------------------------------------
+
+backend.php:
+
+Is an example page of how to use thew authenticate.php page and the variables that 
+get passed back.
+
+-------------------------------------
+
+index.php:
+
+Has a login form... very basic. It is the main page that a user gets re-directed to if they are
+not logged in.
+
+--------------------------------------
+
+SQL.txt:
+
+This is the sql information. It is very simple.. and once you add the database you must add
+a row with your "username" and "password". The "password" must be MD5()'d which is a type of
+encryption. The password CANNNOT!!! be plain text in the database.
+
+--------------------------------------
+
+Thanks for reading and I hope this helps you!

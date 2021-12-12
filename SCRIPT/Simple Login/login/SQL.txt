@@ -1,0 +1,6 @@
+CREATE TABLE users (
+  id int(10) NOT NULL auto_increment,
+  `username` text,
+  `password` text,
+  PRIMARY KEY  (id)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

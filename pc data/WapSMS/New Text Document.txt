@@ -1,0 +1,14 @@
+////Sms SQL	
+$smsavaile = mysql_fetch_array(mysql_query("SELECT COUNT(*) FROM smsdata WHERE cid = '".$cid."'"));
+	if($smsavaile[0]==0){} else{$sql="SELECT * FROM smsdata where cid='".$cid."' ORDER BY id DESC LIMIT ".$lmt.", 20;";
+	$sites=MySQL_Query($sql);	
+while($site=MySQL_Fetch_Array($sites))
+	{
+$smsview = $site['smsview'];
+$smstext=htmlspecialchars_decode($smsview);			
+$snms = nl2br($smstext);
+$smsid = $site['id'];
+$like = $site['slike'];
+print '<div class="smsbox"><div class="sms">'.$cou.' ) '.$snms.'</div><div class="share"><a href="/copy/'.$cid.'/'.$smsid.'/'.$pg.'.html"><b>Copy</b></a> | <a href="/like/'.$cid.'/'.$smsid.'/'.$pg.'.html">Like</a> - '.$like.' | <a href="/copy/'.$cid.'/'.$smsid.'/'.$pg.'.html">Share</a></div></div>';		
+		$cou++;
+	}}

@@ -1,0 +1,29 @@
+///Single Update
+if(file_exists('file/s'.$getflist.'')){ 
+$sarray = file('file/s'.$getflist.'');
+$countsts = count($sarray);
+$countstr=ceil($countsts/$filelist);
+$js = ($countsts-1)-($page*$filelist);
+$is = $js-$filelist;
+for(; $is<$js && $js>=0; $js--) {
+$ups = $js + 1;
+$texts = explode("|",$sarray[$js]);
+{
+$post_bg=($bg++%5== 3) ? "2" : "1";
+$filenm=MySQL_Fetch_Array(MySQL_Query("SELECT nm from mydnld where id='".$texts[0]."';"));
+if($filenm){require_once('getid3/getid3.php');
+$getID3 = new getID3;
+$ThisFileInfo = $getID3->analyze($glob_file[$i]);
+getid3_lib::CopyTagsToComments($ThisFileInfo); 
+$artist = @$ThisFileInfo['comments_html']['artist'][0];  
+$album = @$ThisFileInfo['comments_html']['album'][0];
+$artist= str_replace ("[ AnyMaza.Com ]", "", $artist);
+$artist= str_replace ("[AnyMaza.Com]", "", $artist);
+$album= str_replace ("[ AnyMaza.Com ]", "", $album);
+if(!$album){$albbum=$title;}
+$rtist= str_replace (" ", "-", $artist);
+$martist='Singer : '.$artist.'';}
+echo '<div class="filear"><a href="file'.$text[0].'-$snm1-">'.$snm.'</a><br/>Album : '.$album.'</div>';
+if($post_bg=='2' and $adset=='1'){include 'ads/ads-filelist.php';}
+}}
+ }

@@ -1,0 +1,32 @@
+#
+# www.IndianMob.In
+#
+#If ur script in any sub folder place /your sub foldername   just before /indexw.php and /indexpc.php, /filepc.php,/file.php .Its not necessery if your script not in /public_html/ .
+#
+#
+
+
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule w_(.*)\.html$ /indexw.php?dir=$1
+RewriteRule file_(.*)\.html$ /file.php?file=$1
+RewriteRule pcx_(.*)_(.*)\.html$ /indexpc.php?dir=$1&page=$2
+RewriteRule wx_(.*)_(.*)\.html$ /indexw.php?dir=$1&page=$2
+
+
+
+RewriteRule p_(.*)\.html$ /indexpc.php?dir=$1
+RewriteRule pc_(.*)\.html$ /filepc.php?file=$1
+
+
+ErrorDocument 404 http://waprock.info
+
+ErrorDocument 403 http://waprock.info
+
+ErrorDocument 500 http://waprock.info
+
+
+
+
+

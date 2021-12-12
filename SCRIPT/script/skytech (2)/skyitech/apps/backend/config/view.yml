@@ -1,0 +1,22 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        default - Admin - SKYMp3.In &raquo; Powered By SKYiTech
+    robots:       no-index, no-follow
+    language:     en
+
+  stylesheets:    [main]
+
+  javascripts:    [/js/jquery.min.js, /js/ckeditor/ckeditor.js]
+  has_layout:     on
+  layout:         layout
+
+dev:
+  metas:
+    title:        dev-1m.in - Admin - SKYMp3.In &raquo; Powered By SKYiTech
+
+skymp3:
+  metas:
+    title:        SKYMp3.In - Admin - SKYMp3.In &raquo; Powered By SKYiTech

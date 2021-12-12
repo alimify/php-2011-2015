@@ -1,0 +1,12 @@
+.xlist { padding: 5px 5px 5px 8px; background: #f4f4f4 url(/images/bgr.png) repeat-x top; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.xlist2 { padding: 5px 5px 5px 8px; background: #ffffff url(/images/bgr.png) repeat-x top; border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; }
+.nfooter{ border: 1px solid #000000; padding: 4px 4px 4px 4px; margin: -1px -1px 0px -1px; }
+.hdn {display: none;}
+
+
+.download_blue a { display: block;  color: #ffffff; width: 250px;  font: 17px Helvetica, Verdana, sans-serif; text-decoration: none; text-align: center; text-transform: uppercase;  background: #00b7ea;
+padding: 5px; margin: 1px;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+
+
+.download_green a { display: block;  color: #ffffff; width: 250px;  font: 17px Helvetica, Verdana, sans-serif; text-decoration: none; text-align: center; text-transform: uppercase;  background: #7fbf4d;
+padding: 5px; margin: 1px;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}

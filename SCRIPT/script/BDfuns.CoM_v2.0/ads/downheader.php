@@ -1,0 +1,1 @@
+maximum 970px width ad support.edit ads/downheader.php file to insert ads in this area.

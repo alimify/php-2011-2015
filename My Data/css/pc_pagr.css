@@ -1,0 +1,27 @@
+.page_ing {
+border: 1px solid #ccc;
+border-radius: 5px;
+font-weight: bold;
+margin: 0px;
+padding: 5px;
+text-decoration: none;
+font-size: 0px; 
+}
+.page_ing a, .page_ing b{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-weight: bold;
+    margin: 0 2px;
+    padding: 2px 5px;
+    text-decoration: none;
+	font-size: 14px;
+}
+
+.page_ing a:hover {
+    background:  #ddd;
+    border-color: #ddd;
+text-shadow: none;
+}
+
+.page_ing b{ background:  #ddd;
+    border-color: #ddd;}

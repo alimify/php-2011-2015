@@ -1,0 +1,27 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule mobile/brand/(.*)/([0-9]+)/page-([0-9]+)$ /mobile_list.php?brand_name=$1&brand_id=$2&page=$3 [L]
+
+
+RewriteRule mobile/brand/(.*)/([0-9]+)$ /mobile_list.php?brand_name=$1&brand_id=$2 [L]
+RewriteRule mobile_view-([0-9]+)-mobile-(.*)$ /see_mobile.php?mobile_id=$1&name=$2 [L]
+RewriteRule news_view-([0-9]+)-news-(.*)$ /see_news.php?news_id=$1&name=$2 [L]
+
+
+RewriteRule home/page-([0-9]+)$ /?page=$1 [L]
+
+
+RewriteRule more_brand$ /brand_list.php [L]
+RewriteRule news$ /news_list.php [L]
+RewriteRule mobile$ /mobile_list.php [L]
+RewriteRule home$ /index.php [L]
+
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 month"
+ExpiresByType image/jpeg "access 1 month"
+ExpiresByType image/gif "access 1 month"
+ExpiresByType image/png "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+</IfModule>

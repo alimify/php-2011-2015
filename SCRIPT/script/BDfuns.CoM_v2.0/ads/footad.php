@@ -1,0 +1,1 @@
+maximum 690px width ad support.edit ads/footad.php file to insert ads in this area.

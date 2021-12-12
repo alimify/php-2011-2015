@@ -1,0 +1,8 @@
+User-agent: Slurp
+Disallow: /
+User-agent: *
+Disallow: /123zip
+Disallow: /file/data
+Disallow: /files
+Disallow: /view/files
+Disallow: /extra/files

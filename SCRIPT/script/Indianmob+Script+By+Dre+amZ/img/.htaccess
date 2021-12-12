@@ -1,0 +1,4 @@
+Options -Indexes
+
+ErrorDocument 403 http://indianmob.in
+ErrorDocument 404 http://indianmob.in

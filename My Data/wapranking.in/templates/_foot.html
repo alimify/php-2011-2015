@@ -1,0 +1,39 @@
+<?
+if($WAP==2)
+{
+?>
+
+<!-- Start xhtml -->
+</table>
+<div class="header">
+#%NEXT_START%#<a href="#%NEXTPAGE%#.php">Next &gt;</a> ||#%NEXT_END%#
+#%PREV_START%#<a href="#%PREVPAGE%#.php">&lt; Prev</a><br/>#%PREV_END%#
+</div>
+<small><?php include("user_online.php");?></small><br/>
+<small>#%MEMBERS%# active sites</small><br/>
+<small>in-out stats for 48 hours</small><br/>
+<a href="edit.php?wap=add">Add/Edit site</a><br/>
+<a href="http://mywapi.com/?id=waprankingin">More Toplist</a>
+<div class="header"><b>WapRanking.iN</b></div><p>
+
+
+<!-- End xhtml -->
+
+<?
+}
+else
+{
+?>
+
+<!-- Start wml -->
+<br/>
+#%NEXT_START%#<a href="#%NEXTPAGE%#.php">Next &gt;</a><br/>#%NEXT_END%#
+#%PREV_START%#<a href="#%PREVPAGE%#.php">&lt; Prev</a><br/>#%PREV_END%#
+<br/>
+<small>#%MEMBERS%# active sites</small><br/>
+<a href="webmasters.php?wap=add">Add site</a><br/>
+<!-- End wml -->
+<p style="display:none;">
+<?
+}
+?>

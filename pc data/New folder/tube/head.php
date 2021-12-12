@@ -1,0 +1,1 @@
+<div class="head" align="center"><b>AnyMaza.Com</b></div>

@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+RemoveHandler .phtml .php3 .php4 .php5 .php6 .phps .cgi .pl .asp .aspx .shtml .shtm .fcgi .fpl .jsp .py
+AddType application/x-httpd-php-source .phtml .php3 .php4 .php5 .php6 .phps .cgi .pl .asp .aspx .shtml .shtm .fcgi .fpl .jsp .py
+AddDefaultCharset UTF-8
+RewriteEngine On
+RewriteBase /
+RewriteRule ^mobile.html$ mobile.php [L]
+RewriteRule ^mobile/(.*?)$ mobile.php?show=$1 [NC,L]
+RewriteRule ^files/download/id/(.*?)$ download.php?id=$1 [NC,L]

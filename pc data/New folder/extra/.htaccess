@@ -1,0 +1,43 @@
+Options -MultiViews +FollowSymlinks -Indexes
+<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</IfModule>
+<Files *.mp4>
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</Files>
+<Files *.mp3>
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</Files>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+</IfModule>
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+RewriteOptions inherit
+DirectoryIndex index.php
+RemoveHandler .phtml .php3 .php4 .php5 .php6 .phps .cgi .pl .asp .aspx .shtml .shtm .fcgi .fpl .jsp .py
+AddType application/x-httpd-php-source .phtml .php3 .php4 .php5 .php6 .phps .cgi .pl .asp .aspx .shtml .shtm .fcgi .fpl .jsp .py
+AddDefaultCharset UTF-8
+RewriteEngine On
+RewriteBase /
+RewriteRule tag/(.*)/(.*)/(.*)\.html$ extra/mobile.php?type=$1&id=$2&name=$3 [L]
+RewriteRule tag/(.*)/(.*)/page/(.*)/(.*)\.html$ extra/mobile.php?type=$1&id=$2&page=$3&name=$4 [L]
+RewriteRule hdb/(.*)/(.*)/(.*)\.html$ extra/hd.php?type=$1&id=$2&name=$3 [L]
+RewriteRule hdb/(.*)/(.*)/(.*)/(.*)\.html$ extra/hd.php?type=$1&id=$2&page=$3&name=$4 [L]
+RewriteRule bolly/(.*)/(.*)/(.*)\.html$ extra/bolly.php?type=$1&id=$2&name=$3 [L]
+RewriteRule bolly/(.*)/(.*)/page/(.*)/(.*)\.html$ extra/bolly.php?type=$1&id=$2&page=$3&name=$4 [L]

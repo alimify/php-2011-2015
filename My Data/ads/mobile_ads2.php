@@ -1,0 +1,1 @@
+<center><a href="http://click.buzzcity.net/click.php?partnerid=105176&bn=2"><img src="http://show.buzzcity.net/show.php?partnerid=105176&bn=2"/></a></center>

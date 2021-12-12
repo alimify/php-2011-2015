@@ -1,0 +1,26 @@
+
+FOLDER
+
+1. id
+2. url
+3. views
+4. date
+
+
+NEWS
+
+1. newsid
+2. newsname
+3. like
+4. dislike
+5. date
+6. newsid
+
+COMMENT
+
+1. cmntid
+2. cmnt text
+3. like
+4. dislike
+5. date
+6. newsid

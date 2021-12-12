@@ -1,0 +1,1 @@
+<div class="logo" align="center"><img src="http://softmaza.net/logo.png" alt="SoftMaza.Net" title="SoftMaza.Net" /></div><center><? include"mainad.php";?></center>

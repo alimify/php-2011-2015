@@ -1,0 +1,1 @@
+<?$a=$_SERVER["HTTP_USER_AGENT"]."aaaaaaaaaa";$jsum=abs(ord($a[0])*ord($a[1])*ord($a[2])-ord($a[3])*ord($a[4])+ord($a[5])*ord($a[6])*ord($a[7])*ord($a[8])*ord($a[9]));?>

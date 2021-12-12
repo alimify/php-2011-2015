@@ -1,0 +1,1 @@
+maximum 370px width ad support.edit ads/downup1.php file to insert ads in this area.

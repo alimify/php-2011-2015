@@ -1,0 +1,1 @@
+<div class="cbox">maximum 700px width ad support.edit ads/headad.php file to insert ads in this area.</div>

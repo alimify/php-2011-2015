@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule view/(.*)$ /view.php?id=$1 [L]
+RewriteRule vi/(.*)$ /stream.php?img=$1 [L]
+RewriteRule channel/(.*)/order/(.*)/page/(.*)$ /channel.php?channel=$1&order=$2&ptk=$3 [L]
+RewriteRule channel/(.*)/order/(.*)$ /channel.php?channel=$1&order=$2 [L]
+RewriteRule index/(.*)/order/(.*)/page/(.*)$ /index.php?q=$1&order=$2&ptk=$3 [L]
+RewriteRule index/(.*)/order/(.*)$ /index.php?q=$1&order=$2 [L]
+RewriteRule index/(.*)$ /index.php?q=$1 [L]

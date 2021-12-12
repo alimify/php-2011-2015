@@ -1,0 +1,127 @@
+varnishadm -T 127.0.0.1:6082 -S /etc/varnish/secret ban "req.http.host == anymaza.com && req.url == index.php"
+
+
+varnishadm -T 107.152.242.149:53 -S /etc/varnish/secret ban "req.http.host == anymaza.com && req.url == index.php"
+tar -czvf /home/admin/web/anymaza.com/public_html/filebackup.tar.gz /home/admin/web/anymaza.com/public_html/file
+
+rm -rf /var/zpanel/hostdata/zadmin/backups/
+
+chmod 777 /home/admin/web/anymaza.com/public_html/ -R
+
+tar -pcvzf /var/zpanel/hostdata/zadmin/public_html/filebackup2.tar.gz /var/zpanel/hostdata/zadmin/public_html/anymaza_com/
+
+mv includes/*
+
+scp root@rh1.edu:/some/remote/directory/foobar.txt \
+your_username@rh2.edu:/some/remote/directory/
+
+
+scp -r root@5.189.152.140:/home/admin/web/wapsmsbd.com/public_html/ root@213.136.88.156:/home/admin/web/wapsmsbd.com/
+
+
+tar -xvf /home/admin/web/anymaza.com/public_html/filebackup2.tar -C /home/admin/web/anymaza.com/public_html/
+
+mv /home/admin/web/anymaza.com/public_html/public_html/* /home/admin/web/anymaza.com/public_html/
+
+sed -i '2d' ~/.ssh/known_hosts
+
+cp -avr /home/admin/web/anymaza.com/public_html/var/zpanel/hostdata/zadmin/public_html/anymaza_com/* /home/admin/web/anymaza.com/public_html/
+
+
+rm -rf /home/admin/web/anymaza.com/public_html/bkpk.mp4
+
+
+cp -avr /tmp/conf/ /tmp/backup
+
+tar -xvpf /home/admin/web/anymaza.com/public_html/filebackup2.tar.gz -C /home/admin/web/anymaza.com/public_html/
+
+
+
+
+Xvid Code - done
+
+cd /opt
+wget http://downloads.xvid.org/downloads/xvidcore-1.3.3.tar.gz
+tar xzvf xvidcore-1.3.3.tar.gz
+cd xvidcore/build/generic
+./configure --prefix="$HOME/ffmpeg_build"
+make
+make install
+
+ffmpeg -i /home/admin/web/anymaza.com/public_html/bkpk.mp4 -i /home/admin/web/anymaza.com/public_html/wmc/data/mp4.png -s 176x144 -filter_complex channelsplit=channel_layout=mono -filter_complex 'overlay=0:main_h-overlay_h-0' -vcodec mpeg4 -acodec aac -r 15 -b:a 48k -ar 24000 -strict -2 /home/admin/web/anymaza.com/public_html/dj.3gp
+
+
+ffmpeg -i /home/admin/web/anymaza.com/public_html/wmc/data/3gp.wmv -i /home/admin/web/anymaza.com/public_html/bkpk.mp4 -filter_complex '[0:v]pad=iw:ih*2:0:0[intv];concat=n=2:v=1:a=1[v‌​][a] ' -map [v] -map [a] -vcodec mpeg4 /home/admin/web/anymaza.com/public_html/kbkpoutput.3gp
+
+ffmpeg -i /home/admin/web/anymaza.com/public_html/wmc/data/3gp.wmv -i /home/admin/web/anymaza.com/public_html/bkpk.mp4 -filter_complex 'concat=n=2:v=1:a=1[v‌​][a]' -map '[v]' -map '[a]' -s 176x144 -strict -2 /home/admin/web/anymaza.com/public_html/blind.3gp
+
+
+ffmpeg -i /home/admin/web/anymaza.com/public_html/wmc/data/3gp.wmv -i /home/admin/web/anymaza.com/public_html/bkpk.mp4 -filter_complex channelsplit=channel_layout=mono -filter_complex "[0:v]setpts=PTS-STARTPTS[v0];[1:v]scale=176:144,setsar=1/1,setpts=PTS-STARTPTS[v1];[v0][0:a][v1][1:a]concat=n=2:v=1:a=1[v][a]" -map "[v]" -map "[a]" -s 176x144 -vcodec mpeg4 -acodec aac -b:v 100k -r 15 -b:a 48k -ar 24000 -strict -2 /home/admin/web/anymaza.com/public_html/dbang.3gp
+
+
+
+
+ffmpeg -i /home/admin/web/anymaza.com/public_html/wmc/data/3gp.wmv -i /home/admin/web/anymaza.com/public_html/bkpk.mp4 -filter_complex "[0:v]setpts=PTS-STARTPTS[v0];[1:v]scale=176:144,setsar=1/1,setpts=PTS-STARTPTS[v1];[v0][0:a][v1][1:a]concat=n=2:v=1:a=1[v][a]" -map "[v]" -map "[a]" -strict -2 /home/admin/web/anymaza.com/public_html/bang.mp4
+
+
+ffmpeg -i /home/admin/web/anymaza.com/public_html/wmc/data/3gp.wmv -i /home/admin/web/anymaza.com/public_html/bkpk.mp4 -filter_complex '[0:v]setpts=PTS-STARTPTS[v0];[1:v]scale=176:144,setsar=1/1,setpts=PTS-STARTPTS[v1];[v0][0:a][v1][1:a]concat=n=2:v=1:a=1[v][a]' -map '[v]' -map '[a]' -s 176x144 -vcodec mpeg4 -acodec aac -b:v 350k -r 15 -b:a 48k -ar 24000 -ac 1 -strict -2 /home/admin/web/anymaza.com/public_html/bigt.3gp
+
+
+
+ffmpeg -i /home/admin/web/anymaza.com/public_html/wmc/tmp/16.mp4 -i /home/admin/web/anymaza.com/public_html/wmc/data/mp4.png -filter_complex 'scale=320:240,overlay=main_w-overlay_w-0:main_h-overlay_h-0' -s 320x240 -vcodec mpeg4 -acodec aac -b:v 100k -r 15 -b:a 48k -ar 32000 -ac 1 -strict -2 /home/admin/web/anymaza.com/public_html/wmc/tmp2/16.mp4
+
+
+
+
+
+<?php
+
+$mt=microtime(1);
+require 'config.php';
+require 'func.php';
+include("conf.php");
+include("core.php");
+Connect($dbserver,$dbname,$dbuser,$dbpass);
+$listfule='mp3,mp4,3gp';
+$filelist=20;
+////
+$glob_file=glob("wmc/tmp/*.{{$listfile}}",GLOB_BRACE);
+if($glob_file)
+{
+if(!$sorting){usort($glob_file, 'sortnew');}
+$count=sizeof($glob_file);
+$countstr=ceil($count/$filelist);
+$start=$page*$filelist;
+if($start>=$count OR $start<0)
+{$start=0;}
+$end=$start+$filelist;
+if($end>=$count)
+{$end=$count;}
+for($i=$start; $i<$end; $i++)
+{
+$post_bg=($bg++%5== 3) ? "2" : "1";
+{$filesize = friendly_size(filesize($glob_file[$i]));
+
+$urlset='<div class="file"><a href="/'.$glob_file[$i].'">'.$filename[0].'</a>('.$filesize.') - [<a href="/wm.php?file=&frmt=1&id='.$flid.'">3GP</a>]-[<a href="/wm.php?file=&frmt=2&id='.$flid.'">MP4</a>]-[<a href="/wm.php?file=&frmt=3&id='.$flid.'">HR</a>]-[<a href="/wm.php?file=&frmt=4&id='.$flid.'">HD</a>]</div>';
+echo $urlset;
+	}
+}
+}
+?>
+
+function get_url_mime_type($url)
+{
+
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+curl_setopt($ch, CURLOPT_HEADER, 1);
+curl_setopt($ch, CURLOPT_NOBODY, 1);
+curl_exec($ch);
+return curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
+
+}
+XSS
+"><img src=1.gif onerror=alert(document.cookie)>
+"><img src=1.gif onerror=alert(document.domain)>
+"><img src=1.gif onerror=alert('XSS')>

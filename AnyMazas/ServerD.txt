@@ -1,0 +1,62 @@
+# force mp3 files to be downloaded
+location ~* (.*\.mp3) {
+    types { application/octet-stream .mp3; }
+    default_type application/octet-stream;
+}
+
+nano /etc/nginx/nginx.conf
+nano /etc/nginx/mime.types
+
+mv /home/admin/web/get.downloader.pw/public_html/public_html/* /home/admin/web/get.downloader.pw/public_html/
+
+service mysqld restart
+v-restart-service mysqld
+du --all --one-file-system / | awk '{if($1 > 102400) print int($1/1024) "MB" " " $2 }'
+
+chmod 777 /home/admin/web/get.downloader.pw/public_html/ -R
+
+scp -r root@213.136.88.156:/home/admin/web/get.downloader.pw/public_html/ root@5.189.168.49:/home/admin/web/get.downloader.pw/public_html/
+
+
+<?php
+$singer=$_GET['singer'];
+$singer=htmlspecialchars($singer);
+include("conf.php");
+include("core.php");
+Connect($dbserver,$dbname,$dbuser,$dbpass);
+$title=''.$singer.' All Mp3 Songs Download';
+$pagedescription=''.$singer.' all album mp3 songs free download,'.$singer.' latest updated new songs collection';
+$pagekeywords=''.$singer.','.$singer.' mp3,'.$singer.' mp3 songs,'.$singer.' album,'.$singer.' new songs,'.$singer.' mp3 download,'.$singer.' free songs,'.$singer.' download';
+
+include 'zz_css.php';
+include 'zz_config.php';
+include 'ads/body_config.php';
+print $head;
+$singers = explode(" ", $singer);
+$singer= str_replace (" ", "|", $singer);
+	$lmt=$pg*10;
+	$sites=mysql_query("select * from mydnld where singer like '%".$singer."%' order by id desc limit 0, 10");
+	while($site=MySQL_Fetch_Array($sites))
+	{
+$file = $site['nm'];		
+$id = $site['id'];
+if(file_exists(''.$file.'')){
+$file_extension=pathinfo(($file), PATHINFO_EXTENSION);
+$ext=$file_extension;	
+if($ext=='mp3'){
+require_once('getid3/getid3.php');
+$getID3 = new getID3;
+$ThisFileInfo = $getID3->analyze($file);
+getid3_lib::CopyTagsToComments($ThisFileInfo); 
+$rtist = @$ThisFileInfo['comments_html']['artist'][0];
+$rtist= str_replace ("[ AnyMaza.Com ]", "", $rtist);
+$BaseName=basename($file);
+$BaseName= str_replace ("(AnyMaza.Com)", "", $BaseName);
+$BaseNames = preg_replace("/\.[^.]+$/", "", $BaseName);
+$url1= str_replace (" ", "-", $BaseNames);
+$url2= str_replace (" ", "-", $rtist);
+$url2= str_replace (",", "-", $url2);
+print '<div class="file"><a href="/file'.$id.'-'.$url1.'-'.$url2.'-mp3">'.$BaseName.'<br/>Singer : '.$rtist.'</a></div>';	
+}
+}}
+?>

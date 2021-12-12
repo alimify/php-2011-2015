@@ -1,0 +1,24 @@
+/*
+* *
+* Autoindex Script By alim http://facebook.com/alimify
+* Release : 2014
+* Modify by alim
+* * *
+*/
+
++++Feature
+
+# Default File Extension Wise Thumbnail
+# Manual File Thumbnail
+# File Description System
+# Dynamic Latest Post Update 
+# Top 10 File
+# Total Downloads
+# File Counter 
+
+
++++Manual
+
+# Upload your files to files directory 
+# Upload Thumbnail Images to thumb directory 
+# Create your file description to desc directory like this desc-Foldername.txt

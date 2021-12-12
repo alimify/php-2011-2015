@@ -1,0 +1,28 @@
+Options -Indexes
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^top/([^*]+).html$ top.php?d=$1 [L]
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^files/search/sort/([^*]+)/find/([^*]+)$ s.php?s=$1&k=$2 [L]
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^files/search/find/([^*]+)$ s.php?k=$1 [L]
+
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^files/download/id/([0-9]+)/size/([^*]+)$ dload.php?id=$1&size=$2 [L]
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^files/download/id/([0-9]+)$ dload.php?id=$1 [L]
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^fileList/([0-9]+)/([^*]+)/([0-9]+).html$ filelist.php?cat=$1&sort=$2&page=$3 [L]
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^categorylist/([0-9]+)/([^*]+)/([0-9]+).html$ index.php?cat=$1&sort=$2&page=$3 [L]
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^fileDownload/([0-9]+)/([^*]+).html$ filedownload.php?cat=$1&name=$2 [L]

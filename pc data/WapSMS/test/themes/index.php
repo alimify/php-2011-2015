@@ -1,0 +1,1 @@
+<?phpinclude"../conf.php";echo"<html><head>";echo"<title>ursite.com</title>";echo"</head><body>";echo"<h1>403: ursite.com => Forbidden</h1>";echo"<hr>";echo"You have reached this Page in error, please use your back button to return to Invision Board.";echo"<hr>";echo"<a href=\"$site_url\">ursite.com</a><br/>";echo"</body></html>";?>

@@ -1,0 +1,53 @@
+body{
+font-weight : normal;
+font-size : small;
+padding: 4px;
+max-width: 480px;
+font-family : Verdana, arial;
+background-color : #ffffff;
+color : #000000;
+margin : auto;
+}
+a:active, a:visited, a:link {color:#2C75B1}
+a:hover {color : #000000;}
+a.white:active, a.white:link, a.white:visited {color:#ffffff}
+a.red, a.red:visited  {color:#ff0000}
+
+hr {
+background-color: #FF7F00;
+color: #F75609;
+border: none;
+height: 1px;
+}
+
+img {
+	border: 0px none;
+}
+
+
+div { padding: 4px; margin: 0px 0px 0px 0px;}
+div.footer { padding: 3px; background-color: #FFEA00; text-align:center; border-bottom: 1px solid #B1CADE}
+div.title { padding: 2px; background-color: #EFF3F6; border-bottom: 1px solid #AFCDDC; border-top: 1px solid #AFCDDC; }
+div.info { text-align:center; padding: 2px; color:red; }
+div.logo { text-align:center; background-color:#8CFF1A; margin:0px }
+div.header { text-align:center; background-color:#6698FF; font:bold medium Verdana;color:#FFFFFF; margin:0px }
+div.body { padding: 3px; background-color: #ffffff; border-bottom: 1px dotted #AFCDDC;}
+div.sender { padding: 3px; background-color: #EFF3F6; border-bottom: 1px solid #FFFFFF;}
+div.copyright { padding: 3px; background-color: #73A2C6; border: 0px;}
+div.partner { text-align:center; background-color:#B93B8F; font:bold small arial;color:#FFFFFF; margin:0px }
+
+div.wform{
+text-align:center;
+background-color: #FFFFFF;
+padding: 5px 2px 2px 2px;
+margin: 3px 0 0;
+border-width:1px 0;
+border-style:solid;
+border-color:#000;
+}
+
+div.c1 { padding: 4px; margin: 0px 0px 0px 0px; text-align:center;}
+div.div1 {text-align:center; padding: 2px; background-color: #87CEFA; border-bottom: 1px dotted #AFCDDC; border-top: 1px dotted #AFCDDC;}
+div.gap {
+height:0.45em;
+}

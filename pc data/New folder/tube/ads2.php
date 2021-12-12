@@ -1,0 +1,1 @@
+<script type="text/javascript" src="http://adcrax.com/addengine/showadds.php?id=1712&bg_color=ffffff&link_color=03F&text_color=000000&display_url_color=090"></script>

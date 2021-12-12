@@ -1,0 +1,2 @@
+<?php print'<div><a href="/admin_updturl.php?folderid='.$fldid.'">Update URL</a>| <a href="/uploadfile.php?folderid='.$fldid.'">Video Uploader</a> | <a href="?logout=1">Logout</a></div><div class="f1" align="center"><b>Copyright &copy; AnyMaza.Com 2014</b></div>
+</body></html>'; ?>

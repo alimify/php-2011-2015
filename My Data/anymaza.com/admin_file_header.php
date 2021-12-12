@@ -1,0 +1,1 @@
+<div class="logo" align="center"><img src="http://AnyMaza.Com/mobile_logo.png" alt="AnyMaza.Com" title="AnyMaza.Com" /></div><link rel="stylesheet" href="http://AnyMaza.Com/css/style.css" type="text/css" />

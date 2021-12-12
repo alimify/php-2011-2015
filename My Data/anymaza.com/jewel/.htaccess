@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^jewel\.anymaza\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.jewel\.anymaza\.com$
+RewriteRule ^/?$ "http\:\/\/anymaza\.com\/admin_file_list\.php" [R=301,L]
+

@@ -1,0 +1,36 @@
+dev:
+  webpath:   /
+  sitename: skymp3.sky
+  smallname: skymp3
+  filename2hide: (SKYMp3.In)
+  onlinetime: 600
+
+skymp3:
+  webpath:   /
+  sitename: SKYMp3.In
+  smallname: skymp3
+  filename2hide: (SKYMp3.In)
+  onlinetime: 600
+  webmaster: SKYMp3.In <skymp3.in@gmail.com>
+
+skymp3_m:
+  webpath:   /
+  sitename: m.skymp3
+  smallname: skymp3
+  filename2hide: (SKYMp3.In)
+  onlinetime: 600
+  webmaster: SKYMp3.In <skymp3.in@gmail.com>
+
+all:
+  sfImageTransformPlugin:
+   default_adapter: GD # GD or ImageMagick
+   default_image:
+     mime_type: image/png
+     filename: Untitled.png
+     width: 100
+     height: 100
+     color: '#FFFFFF'
+   font_dir: /usr/share/fonts/truetype/msttcorefonts
+   mime_type:
+     auto_detect: true
+     library: gd_mime_type #  gd_mime_type (GD), Fileinfo (PECL), MIME_Type (PEAR)

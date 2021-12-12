@@ -1,0 +1,131 @@
+/*
+*
+*                 Developed By :: SkY Web Solution
+*                  Email Us: admin@skymp3.in
+*
+*/
+
+
+@import url("//fonts.googleapis.com/css?family=Roboto");
+
+body { color:#000; font-family:Roboto; margin: 0; padding: 0; font-size:14px; line-height:20px; }
+body *{ margin: 0; padding: 0; }
+a img,:link img,:visited img { border: none; }
+a	{ text-decoration:none; color:#034b9b; font-weight:bold; }
+a:hover { }
+b{ font-weight:bold; }
+textarea{ font-size:small; }
+a { padding:5px;}
+b{ font-weight:bold; }
+
+.copyright{font-size:x-normal;display:block;background:#3D8CD7;padding:3px;color:#fff}
+.tCenter	{ text-align:center; }
+.logo	{  color: #fff; background: url(../images/bgblue.png)repeat-x; text-align: center; padding-top: 4px; padding-bottom: 4px; }
+.search	{ background: #DDE7F1; border:1px solid #b0c5da; padding:2px; text-align:center;}
+#mainDiv{ }
+
+.description {  background-color: #dde7f1; color: #000000; margin-bottom:5px; margin-top:5px; font-size:8px; font-weight:small;  text-align:center; }
+.description a { text-decoration:underline; }
+.filedescription { background:#f5f5f5; padding: 5px 0; text-align:center; }
+
+hr{ background-color:#EEE; border:medium none; height:1px; margin:2px 0; padding:0;}
+h1,h2,h3{ color: #fff; background: #3d8cd7; padding: 8px; font-size: medium; margin: 0px 0px 0 0px; border-top-left-radius: 2px; -moz-border-top-left-radius: 5px; -webkit-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-top-right-radius: 5px; -webkit-border-top-right-radius: 5px; }
+h1 { text-align:center; }
+
+.fhd{ background:#3d8cd7; color:#ffffff; border-bottom: 1px solid #ffffff; border-radius:5px; font-weight:bold; margin:7px 0 0 0; padding:0 5px; display:inline-block; }
+.clr { clear:both; }
+.absmiddle	{ vertical-align:middle; padding:1px; border:1px solid #999; }
+.ct	{ margin-right:3px; vertical-align:middle; padding:1px; border:1px solid #999; }
+.odd, .even, .sl	{ vertical-align:middle; }
+.odd { background:#f5f5fa; }
+.even { background:#fff; }
+.description { background:#f5f5f5; color:#222; padding:2px; text-align:center; }
+.description a { text-decoration:underline; }
+.filedescription { background:#f5f5f5; padding: 5px 0; text-align: center; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+
+.fl { }
+.fl td{ padding:7px 2px; border-bottom:1px solid #ccc; }
+.fl a{ vertical-align:middle; }
+.fl img{ border:1px solid #bbb; padding:1px; }
+.fl div{ display:table-cell; }
+.tblimg	{ width:65px; text-align:center; }
+
+.catRow div{ display:table-cell; }
+.catRow div img { padding-right:5px; }
+
+.link1{ color:#0E71C6; }
+.button { color:#086C8F; font-weight:bold; }
+.red { color:red;}
+.info	{ color:red; background:#fff; text-align:center; padding:2px; }
+p{ padding:2px 0; }
+
+table	{ width:100%; margin:auto;}
+
+.devider	{ height:5px;}
+.dtype	{ border-bottom:1px solid #ccc; font-size:x-small; padding:5px; text-align:center; }
+
+.fileName	{ font-weight:bold; }
+.fileName	span{ color:#555; text-decoration:none;}
+.fileName	img{ padding-right:3px;}
+
+.downLink	{ margin:5px 0; }
+.dwnLink	{ font-weight:bold; }
+
+.pgn { background:#f5f5f5; border:1px solid #ddd; padding:5px 0; }
+.pgn form { padding-top:5px; }
+.pgn a, .pgn span { padding:2px 5px; margin:0 1px; font-weight:bold; -moz-border-radius:5px; -webkit-border-radius:5px; }
+.pgn a { border:1px solid #ccc; background:#ddd; }
+.pgn div { padding-top:5px; }
+.pgn span,.pgn a:hover { border:1px solid #ddd; background:#fff; }
+
+img	{ vertical-align:middle; }
+.showimage	{ padding:5px; text-align:center;}
+.showimage	img { box-shadow:0 0 2px #999; }
+
+a.top {color:#FF7F00; text-decoration:none; }
+
+.updates h2	{ color:#000; }
+.updates div	{ border-bottom:1px solid #ddd; padding:3px; }
+
+.catRow	{ border-bottom:1px solid #ddd; font-weight:bold;}
+.catRow:hover { background:#f5f5f5; }
+.catRow a { display:block; padding:8px; }
+.catRow div { display:table-cell; }
+.catRow img { border-radius:10px; margin-right: 3px;}
+.catRow a div span,
+
+
+.catRowHome	{ border-bottom:1px solid #ddd; font-weight:bold;}
+.catRowHome:hover { background:#f5f5f5; }
+.catRowHome a { display:block; padding:8px; }
+.catRowHome div { display:table-cell; }
+.catRowHome img { border-radius:10px; margin-right: 3px;}
+.catRowHome a div span,
+.catRowHome a { display:block; background:url(../images/arrow.gif) no-repeat left center; padding-left:20px;}
+
+.fl { border-bottom:1px solid #ddd; background:#fff;}
+.fl:hover	{ background:#eee; }
+.fl span{ color:#000; font-weight:normal; }
+.fl a{ display:block; padding:8px; }
+.fl a img{ border: 1px solid #ddd; border-radius: 3px; padding:0;margin-right:5px;}
+
+.fl a div div{ vertical-align:middle; display:table-cell; }
+.fl a div{ }
+
+.path{ padding:2px; margin:5px 0; border:1px solid #ddd; background:#f5f5f5;}
+.error{ background:#FFEFEF; border:1px solid #f00; margin:5px; padding:5px; font-weight:bold; text-align:center; color:#f00; }
+
+.fshow { padding:3px; text-align:center; background:#fff; border-bottom:1px solid #ddd;}
+.thumbimg{ vertical-align:middle; border:none; border-radius:10px; }
+.db{ font-size:small; text-align:center; padding:5px;}
+
+.ad1	{ background:#3d8cd7; border:1px solid #3d8cd7;color:#fff; font-weight:bold; padding:2px;}
+.ad1 a	{ color:#fff; font-weight:bold; }
+
+.fb { font-weight:bold; }
+.f1{ padding:3px; font-weight:bold; text-align:center; background:#3d8cd7; border:1px solid #3d8cd7; }
+.f1 a { color:#fff; }
+#online{ text-align:center;}
+
+
+SKYMp3.In Css Style Make By Roni Haldar Email - admin@skymp3.in Or No. +919733544794

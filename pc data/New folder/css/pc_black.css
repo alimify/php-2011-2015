@@ -1,0 +1,14 @@
+.nfooter{ color: #ffffff; background-color: #333333; background-repeat: no-repeat; background-position: right 50%; text-align: left; padding: 4px; font-weight:bold; }
+
+.mainblok {border: 1px solid #333333 ;}
+
+.nfooter a {color: #ffffff;}
+body{ background:white;}a {text-decoration:none;color:maroon;} a:active {color: deep;} a:focus, a:hover { color: #00CD66;text-transform: uppercase; font-weight: bolder; font-size: 16px;}body, a:hover {cursor: url(http://ani.cursors-4u.net/cursors/cur-11/cur1089.cur),progress!important;
+
+.update div { 
+background:#FDFDFD;
+background: -moz-linear-gradient(top, #FDFDFD 0%, #EEEEEE 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FDFDFD), color-stop(100%,#EEEEEE)); 
+background: -webkit-linear-gradient(top, #FDFDFD 0%, #EEEEEE 100%); 
+border-bottom:1px solid #ccc; padding:8px; 
+}update a {color:#fff;} a:active {color:#fff;}

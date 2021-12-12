@@ -1,0 +1,63 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule c_([0-9]+)_(.*)_p([0-9]+)_s([0-9]+)$ /list.php?pid=$1&name=$2&page=$3&sort=$4 [L]
+RewriteRule cv_([0-9]+)_(.*)_p([0-9]+)_s([0-9]+)$ /list.php?pid=$1&name=$2&page=$3&sort=$4&frtype=1 [L]
+RewriteRule ca_([0-9]+)_(.*)_p([0-9]+)_s([0-9]+)$ /list.php?pid=$1&name=$2&page=$3&sort=$4&frtype=2 [L]
+RewriteRule cr_([0-9]+)_(.*)_p([0-9]+)_s([0-9]+)$ /list.php?pid=$1&name=$2&page=$3&sort=$4&frtype=3 [L]
+RewriteRule cw_([0-9]+)_(.*)_p([0-9]+)_s([0-9]+)$ /list.php?pid=$1&name=$2&page=$3&sort=$4&frtype=4 [L]
+
+RewriteRule album([0-9]+)-(.*)-p([0-9]+)-s([0-9]+)$ /zz_list.php?cid=$1&name=$2&page=$3&sort=$4 [L]
+
+RewriteRule c_([0-9]+)_(.*)_s([0-9]+)$ /list.php?pid=$1&name=$2&sort=$3 [L]
+RewriteRule cv_([0-9]+)_(.*)_s([0-9]+)$ /list.php?pid=$1&name=$2&sort=$3&frtype=1 [L]
+RewriteRule ca_([0-9]+)_(.*)_s([0-9]+)$ /list.php?pid=$1&name=$2&sort=$3&frtype=2 [L]
+RewriteRule cr_([0-9]+)_(.*)_s([0-9]+)$ /list.php?pid=$1&name=$2&sort=$3&frtype=3 [L]
+RewriteRule cw_([0-9]+)_(.*)_s([0-9]+)$ /list.php?pid=$1&name=$2&sort=$3&frtype=4 [L]
+
+RewriteRule singer_(.*)_mp3_songs_s([0-9]+)_p([0-9]+)$ /singer.php?singer=$1&sort=$2&page=$3 [L]
+RewriteRule c_([0-9]+)_(.*)_p([0-9]+)$ /list.php?pid=$1&name=$2&page=$3 [L]
+RewriteRule cv_([0-9]+)_(.*)_p([0-9]+)$ /list.php?pid=$1&name=$2&page=$3&frtype=1 [L]
+RewriteRule ca_([0-9]+)_(.*)_p([0-9]+)$ /list.php?pid=$1&name=$2&page=$3&frtype=2 [L]
+RewriteRule cr_([0-9]+)_(.*)_p([0-9]+)$ /list.php?pid=$1&name=$2&page=$3&frtype=3 [L]
+RewriteRule cw_([0-9]+)_(.*)_p([0-9]+)$ /list.php?pid=$1&name=$2&page=$3&frtype=4 [L]
+
+
+RewriteRule album([0-9]+)-(.*)-p([0-9]+)$ /zz_list.php?cid=$1&name=$2&page=$3 [L]
+RewriteRule album([0-9]+)-(.*)-s([0-9]+)$ /zz_list.php?cid=$1&name=$2&sort=$3 [L]
+
+RewriteRule view/([0-9]+)/(.*)\.html$ /file.php?id=$1&filename=$2 [L]
+RewriteRule file([0-9]+)-(.*)$ /file.php?id=$1&name=$2 [L]
+
+
+RewriteRule c_([0-9]+)_(.*)$ /list.php?pid=$1&name=$2 [L]
+RewriteRule cv_([0-9]+)_(.*)$ /list.php?pid=$1&name=$2&frtype=1 [L]
+RewriteRule ca_([0-9]+)_(.*)$ /list.php?pid=$1&name=$2&frtype=2 [L]
+RewriteRule cr_([0-9]+)_(.*)$ /list.php?pid=$1&name=$2&frtype=3 [L]
+RewriteRule cw_([0-9]+)_(.*)$ /list.php?pid=$1&name=$2&frtype=4 [L]
+RewriteRule singer_(.*)_mp3_songs_s([0-9]+)$ /singer.php?singer=$1&sort=$2 [L]
+RewriteRule singer_(.*)_mp3_songs_p([0-9]+)$ /singer.php?singer=$1&page=$2 [L]
+
+RewriteRule mp3load_(.*)_([0-9]+)$ /file.php?name=$1&id=$2&filetype=mp3 [L]
+RewriteRule mp4load_(.*)_([0-9]+)$ /file.php?name=$1&id=$2&filetype=mp4 [L]
+RewriteRule 3gpload_(.*)_([0-9]+)$ /file.php?name=$1&id=$2&filetype=3gp [L]
+RewriteRule apkload_(.*)_([0-9]+)$ /file.php?name=$1&id=$2&filetype=apk [L]
+RewriteRule jpegload_(.*)_([0-9]+)$ /file.php?name=$1&id=$2&filetype=jpeg [L]
+RewriteRule jpgload_(.*)_([0-9]+)$ /file.php?name=$1&id=$2&filetype=jpg [L]
+RewriteRule pngload_(.*)_([0-9]+)$ /file.php?name=$1&id=$2&filetype=png [L]
+RewriteRule jarload_(.*)_([0-9]+)$ /file.php?name=$1&id=$2&filetype=jar [L]
+
+
+RewriteRule album([0-9]+)-(.*)$ /zz_list.php?cid=$1&name=$2 [L]
+RewriteRule singer-(.*)-p([0-9]+)$ /zz_singer.php?singer=$1&page=$2 [L]
+RewriteRule read([0-9]+)-(.*)$ /zz_lyrics.php?id=$1&filename=$2 [L]
+
+RewriteRule music/([0-9]+)$ /file.php?id=$1 [L]
+RewriteRule singer-(.*)$ /zz_singer.php?singer=$1 [L]
+RewriteRule load___([0-9]+)$ /file.php?id=$1 [L]
+
+
+RewriteRule singer_(.*)_mp3_songs$ /singer.php?singer=$1 [L]
+<FilesMatch "\.(mov|mp3|jpg|pdf|mp4|avi|wmv)$">
+   ForceType application/octet-stream
+   Header set Content-Disposition attachment
+</FilesMatch>

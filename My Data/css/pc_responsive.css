@@ -1,0 +1,35 @@
+/* RESONSIVE Design of SuperMp3.Net */
+
+@media only screen and (max-width: 500px) 
+{
+body{min-width: 100%; max-width: 100%; display: block}
+.mobile_content{display: block;  overflow: hidden; display: block}
+.pc_content{display: none;}
+
+.body_forum_update_left {display: none;}
+.mainbox {margin-bottom:2px;}
+}
+
+
+@media only screen and (min-width:500px) 
+{
+body {min-width: 990px; max-width: 990px;  margin: 0 auto; border: 1px solid #f5f5f5;}
+.mobile_content{display: none;}
+.pc_content{display: block; }
+
+.body_left{width: 620px; float:left; display:block; margin-left:10px; margin-right:10px; margin-top: 15px;  overflow: hidden;}
+.body_right{float:left; width: 350px;display:block; margin-top: 15px;  overflow: hidden; }
+
+.body_area{display:block; overflow: hidden; margin: 0 auto;}
+.ad{display:block; overflow: hidden; margin: 0 auto;}
+.body_forum_update{display:block; overflow: hidden;} 
+.body_forum_update_left {width: 120px; margin: 5px;  float:left; display:block; overflow: hidden; margin-top: 10px}
+.body_forum_update_right{width:490px; float:left; display:block; overflow: hidden;}
+.mainbox {margin-bottom:7px;}
+
+}
+
+
+.nfooter, .mainbox, .mainblok{display:block; overflow: hidden;}
+input::-webkit-input-placeholder {font-size: 10px;  font-weight: normal;}
+input:-moz-placeholder  {font-size: 10px; font-weight: normal;}

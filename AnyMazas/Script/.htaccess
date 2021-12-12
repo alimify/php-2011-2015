@@ -1,0 +1,29 @@
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+</IfModule>
+RewriteEngine On
+RewriteBase /
+RewriteRule site_(.*)$ /kingbangla.php?site=$1 [L]
+RewriteRule forum(.*)$ /kingbangla.php?forum=$1 [L]
+RewriteRule profile(.*)$ /kingbangla.php?profile=$1 [L]
+RewriteRule music(.*)$ /kingbangla.php?music=$1 [L]
+RewriteRule software(.*)$ /kingbangla.php?software=$1 [L]
+RewriteRule game(.*)$ /kingbangla.php?game=$1 [L]
+RewriteRule ringtone(.*)$ /kingbangla.php?ringtone=$1 [L]
+RewriteRule theme(.*)$ /kingbangla.php?theme=$1 [L]
+RewriteRule video(.*)$ /kingbangla.php?video=$1 [L]
+RewriteRule album(.*)$ /anymaza.php?album=$1 [L]
+RewriteRule file(.*)$ /anymaza.php?file=$1 [L]
+RewriteRule read(.*)$ /anymaza.php?read=$1 [L]
+RewriteRule singer(.*)$ /anymaza.php?singer=$1 [L]
+RewriteRule cthumb/(.*)$ /ifw.php?img=$1 [L]
+RewriteRule VideoList-([0-9]+)-(.*)-p([0-9]+)-s([0-9]+)$ /VideoList.php?cid=$1&name=$2&page=$3&sort=$4 [L]
+RewriteRule VideoList-([0-9]+)-(.*)-p([0-9]+)$ /VideoList.php?cid=$1&name=$2&page=$3 [L]
+RewriteRule VideoList-([0-9]+)-(.*)-s([0-9]+)$ /VideoList.php?cid=$1&name=$2&sort=$3 [L]
+RewriteRule VideoList-([0-9]+)-(.*)$ /VideoList.php?cid=$1&name=$2 [L]
+RewriteRule VideoView([0-9]+)-(.*)$ /VideoFile.php?id=$1&name=$2 [L]

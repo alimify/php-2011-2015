@@ -1,0 +1,1 @@
+<div class="logo" align="center"><img src="/logo.png" alt="AnyMaza.Com" title="AnyMaza.Com" /></div><link rel="stylesheet" href="/css/my.css" type="text/css" />

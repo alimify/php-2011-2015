@@ -1,0 +1,1 @@
+<div class="cbox">maximum 350px width ad support.edit ads/mrt.php file to insert ads in this area.</div>
